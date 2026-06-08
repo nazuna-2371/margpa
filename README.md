@@ -365,6 +365,9 @@ Yuki Takagi (nazuna-2371)
 
 GitHub:
 https://github.com/nazuna-2371
+
+LinkedIn:
+https://www.linkedin.com/in/yuki-takagi-34a511389
 ```
 
 ---
