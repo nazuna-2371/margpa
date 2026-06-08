@@ -23,7 +23,7 @@ AI / LLM を業務、研究、設計、監査、教育、医療補助、Agentic 
 
 MARGPA / MARGD は、このような問題に対して、AI / LLM の実行時指示を単発の依頼文ではなく、外部から与える runtime governance specification として扱うための設計である。
 
-![MARGPA Architecture](assets/images/margpa_architecture_research_ja.png)
+![MARGPA Architecture](../assets/images/margpa_architecture_research_ja.png)
 
 ---
 
