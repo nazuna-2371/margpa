@@ -96,7 +96,7 @@ DAGD
 
 対象は、出力として観測可能な応答生成挙動である。
 
-![MARGPA Dense Research Architecture](../../assets/images/margpa_architecture_dense_research_ja.png)
+![MARGPA Dense Research Architecture](../assets/images/margpa_architecture_dense_research_ja.png)
 
 ---
 
