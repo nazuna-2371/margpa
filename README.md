@@ -410,10 +410,10 @@ They are external runtime governance specifications intended to support premise 
 For usage, see:
 
 ```text
-docs/quickstart_ja.md
-docs/overview_ja.md
-docs/argd_and_dagd_ja.md
-docs/usage_and_limitations_ja.md
+docs/quickstart_en.md
+docs/overview_en.md
+docs/argd_and_dagd_en.md
+docs/usage_and_limitations_en.md
 ````
 
 License: CC BY-SA 4.0
