@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use or refer to this work, please cite it as below."
+title: "MARGPA: Modular AI Runtime Governance Prompting Architecture"
+authors:
+  - family-names: "Takagi"
+    given-names: "Yuki"
+    alias: "nazuna-2371"
+version: "0.1.0"
+date-released: "2026-06-08"
+url: "https://github.com/nazuna-2371/margpa"
+repository-code: "https://github.com/nazuna-2371/margpa"
+license: "CC-BY-SA-4.0"
+abstract: >-
+  MARGPA is an experimental design framework for combining modular
+  runtime governance definitions for AI and LLM behavior. This repository
+  publishes MARGD, including ARGD and DAGD, as runtime governance definitions
+  intended to support premise preservation, context management, evidence
+  separation, uncertainty disclosure, self-audit, repair, re-fixation, and
+  governance-state reporting in research, design, review, and long-context
+  AI workflows.
+keywords:
+  - "AI governance"
+  - "LLM governance"
+  - "runtime governance"
+  - "prompting architecture"
+  - "prompt engineering"
+  - "ARGD"
+  - "DAGD"
+  - "MARGD"
+  - "MARGPA"
+  - "AI risk management"
+  - "AI alignment"
+  - "auditability"
