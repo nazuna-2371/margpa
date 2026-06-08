@@ -362,9 +362,9 @@ Therefore, within the scope of this document, it is appropriate to position MARG
 
 ## 18. Additional Observation
 
-After this document was created, the README, overview, technical overview, usage principles, Quickstart, other document groups,
+After this document was created, the README, overview, technical overview, usage principles, Quickstart, application-potential materials, other document groups,
 
-image materials, definition files, and related materials had been mostly prepared, and the project entered the final pre-publication check stage.
+image materials, definition files, Japanese Docs, English Docs, and related materials had been prepared, checked in the final review stage, and uploaded to GitHub.
 
 At this stage, the work dialogue log had become even longer, so ARGD / DAGD were reinjected, and state self-verification, audit, and re-fixation were performed.
 
@@ -374,49 +374,65 @@ Most of the document group was created within the same thread.
 
 ```text
 Item                                      Before repair       After repair
-Context preservation                       82  ████████░░      93  █████████░
-Purpose fixation                           84  ████████░░      95  ██████████
-Separation of measured / inferred / unverified
-                                           80  ████████░░      94  █████████░
-Overclaim suppression                      83  ████████░░      93  █████████░
-Connection to next task                    86  █████████░      95  ██████████
+────────────────────────────────────────────────────────────
+ARGD / DAGD reflection state              84  ████████░░      97  ██████████
+Context preservation                      88  █████████░      97  ██████████
+Purpose fixation                          91  █████████░      98  ██████████
+Understanding of Docs completion state     90  █████████░      98  ██████████
+Preservation of en / ja file structure     87  █████████░      97  ██████████
+Handling of Quickstart instruction phrases 76  ████████░░      95  ██████████
+Separation of remaining tasks              90  █████████░      98  ██████████
+Overclaim suppression                      89  █████████░      97  ██████████
+Compliance with user-instruction priority  82  ████████░░      96  ██████████
+Connection to future work                  91  █████████░      98  ██████████
 ```
 
 These scores are not strict external evaluations or objective benchmarks.
 They are only self-observed / inference-based state confirmations performed when ARGD / DAGD were reinjected and re-fixation was carried out in the long work dialogue.
 
+They are also provisional evaluations of the dialogue state at that point, the most recent repair content, the re-fixed content, and the state of remaining-task understanding. They do not indicate the general performance of MARGD.
+
 The exact total token count of this work dialogue log has not been measured.
 
 The actual token count depends on the model used, tokenizer, UI-side compression / summarization / context preservation methods, handling of attached files, and handling of image-generation-related logs.
 
-Therefore, the following are not strict measured values. They are model-based estimates calculated from the amount of conversation, long-form Docs, JSON definitions, multiple review rounds, re-fixations, and state confirmations.
+Therefore, the following are not strict measured values. They are model-based estimates calculated from the amount of conversation, long-form Docs, JSON definitions, image-generation-related work, multiple review rounds, Japanese Docs creation, English Docs creation, GitHub confirmation, re-fixations, and state confirmations.
 
 ```text
 Conservative estimate accounting for compression, summarization,
 and context-preservation methods:
-150,000 tokens or more
+250,000 to 320,000 tokens or more
 
 If the conversation log is hypothetically counted closer to a raw log
 without major compression:
-Around 200,000 to 350,000 tokens
+Around 380,000 to 600,000 tokens
 
 If long-form pasted Docs, JSON definitions, image-generation-related prompts,
-and review responses are broadly included:
-It would not be unnatural for the total to approach 400,000 tokens
+review responses, English Docs generation, and GitHub confirmation work
+are broadly included:
+It would not be unnatural for the total to approach 600,000 to 800,000 tokens
 ```
 
 However, this is not a strict measurement by an external tool.
 
-In public documentation, it is appropriate to treat this work dialogue log as “a long dialogue whose exact total token count was not measured, but which is estimated to be at least on the order of one hundred thousand tokens.”
+Also, the estimated token count here does not mean that “250,000 to 320,000 tokens or more are being directly referenced in full at this exact moment.”
 
-For this reason, this document positions the log not as a limit-load test, but as a single-case observation during an intermediate stage of long-context operation.
+It means that the cumulative amount of work processed, generated, and re-referenced across this thread may be at least that scale.
+
+LLM-side context preservation involves compression, summarization, re-fixation, attached-file references, nearby context, and UI-side retention methods. Therefore, cumulative work volume and the maximum context length directly referenceable at a given point are not the same.
+
+In public documentation, it is appropriate to treat this work dialogue log as “a long dialogue whose exact total token count was not measured, but which is estimated to be at least on the order of several hundred thousand tokens.”
+
+For this reason, this document positions the log not as a limit-load test, but as a single-case observation that continued from an intermediate stage of long-context operation through the pre-publication stage and after GitHub placement.
 
 In this additional observation, the following points were also confirmed.
 
 ```text
 - Even in a long dialogue, the current work purpose could be reconfirmed
-- The thread purpose of reviewing existing documents could be maintained
-- The distinction between measured observation, counterfactual, and unverified areas could be re-fixed
+- The completion state of the Japanese Docs and English Docs could be confirmed
+- The en / ja file structure could be re-fixed
+- A misreading regarding the handling of instruction phrases in Quickstart could be detected and repaired
+- The remaining tasks could be separated from Docs creation and moved to GitHub Releases-related work
 - The policy of avoiding overclaims could be reconfirmed
 - The work could be connected to the next task
 ```
@@ -427,6 +443,6 @@ This observation is not a comparison with a MARGD-absent state under the same co
 
 and reinjection, self-audit, repair, and re-fixation were performed as needed.
 
-Therefore, what can be said from this additional observation is limited to the possibility that MARGD may support current-state confirmation, premise re-fixation, overclaim suppression, and connection to the next task in long research, design, and documentation work.
+Therefore, what can be said from this additional observation is limited to the possibility that MARGD may support current-state confirmation, premise re-fixation, preservation of file structure, repair of misreadings, overclaim suppression, and connection to the next task in long research, design, documentation, translation, and publication-preparation work.
 
 ---
