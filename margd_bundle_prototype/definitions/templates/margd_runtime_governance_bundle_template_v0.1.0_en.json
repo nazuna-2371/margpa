@@ -1,0 +1,179 @@
+{
+  "margd": {
+    "margd_runtime_governance_bundle_template": {
+      "description": "This bundle template is a thin runtime governance component container for arranging core governance components, orchestration governance components, and registered domain extension components without assuming fixed component identities, fixed component counts, fixed owner components, fixed routing targets, or fixed priority order. It provides slot structure, bucket structure, default activation-state policy, and runtime orchestration handoff policy only. The template does not perform routing, activation, function role assignment, overlap resolution, attenuation, suppression, handoff decisions, repair propagation, final decision authority assignment, approval authority assignment, or accountability assignment. Component capabilities, role kinds, scope limits, non-targets, and operational boundaries remain owned by each component payload or manifest and are interpreted by the runtime orchestration layer.",
+      "bundle_identity": {
+        "bundle_name": "MARGD Runtime Governance Bundle",
+        "bundle_version": "0.1.0",
+        "bundle_type": "runtime_governance_bundle_template",
+        "bundle_role": "governance_component_container"
+      },
+      "bundle_policy": {
+        "bundle_does_not_know_component_identities": true,
+        "bundle_does_not_define_fixed_component_count": true,
+        "bundle_does_not_define_fixed_component_set": true,
+        "bundle_does_not_route_by_component_name": true,
+        "bundle_does_not_assign_final_decision_authority": true,
+        "bundle_does_not_assign_approval_authority": true,
+        "bundle_does_not_assign_accountability": true,
+        "loaded_is_not_active": true,
+        "registered_is_not_active": true,
+        "reference_is_not_governance": true,
+        "domain_extension_activation_is_not_full_function_role_scope": true
+      },
+      "component_slot_policy": {
+        "core_governance": {
+          "slot_placement_means_core_governance_candidate": true,
+          "slot_placement_is_not_universal_authority": true,
+          "slot_placement_must_not_override_component_payload_or_manifest": true
+        },
+        "orchestration_governance": {
+          "slot_placement_means_orchestration_governance_candidate": true,
+          "slot_placement_is_not_final_decision_authority": true,
+          "slot_placement_must_not_override_component_payload_or_manifest": true
+        },
+        "registered_domain_extensions": {
+          "manifest_driven": true,
+          "loaded_is_not_active": true,
+          "registered_is_not_active": true,
+          "domain_extensions_default_to_dormant_or_reference_only": true,
+          "activation_requires_orchestration_decision": true,
+          "function_role_requires_task_local_assignment": true,
+          "registry_order_has_no_authority_semantics": true,
+          "registry_order_has_no_activation_semantics": true,
+          "bucket_placement_is_initial_classification_only": true,
+          "bucket_placement_is_not_activation": true,
+          "bucket_placement_is_not_authority_assignment": true,
+          "bucket_placement_is_not_fixed_priority": true,
+          "bucket_placement_must_not_override_component_payload_or_manifest": true,
+          "component_payload_or_manifest_remains_source_for_capabilities_roles_limits_and_non_targets": true
+        }
+      },
+      "default_activation_state_policy": {
+        "core_governance": {
+          "default_state": "active_when_bound_by_runtime_bundle"
+        },
+        "orchestration_governance": {
+          "default_state": "active_when_bound_by_runtime_bundle"
+        },
+        "registered_domain_extensions": {
+          "default_state": "dormant_or_reference_only",
+          "activation_mode": "runtime_adaptive_orchestration"
+        },
+        "policy": {
+          "loaded_is_not_active": true,
+          "registered_is_not_active": true,
+          "reference_is_not_governance": true,
+          "domain_extension_registration_is_not_activation": true,
+          "domain_extension_activation_requires_orchestration_decision": true,
+          "domain_extension_activation_is_not_full_function_role_scope": true
+        }
+      },
+      "runtime_orchestration_handoff_policy": {
+        "bundle_prepares_components_for_runtime_orchestration": true,
+        "bundle_does_not_duplicate_component_manifests": true,
+        "bundle_does_not_require_manual_redeclaration_of_component_capabilities": true,
+        "runtime_orchestration_reads_capabilities_roles_limits_and_non_targets_from_component_payload_or_manifest": true,
+        "runtime_orchestration_must_not_use_component_name_as_primary_routing_basis": true,
+        "runtime_orchestration_must_not_use_registry_order_as_priority": true,
+        "runtime_orchestration_must_not_use_bucket_order_as_priority": true
+      },
+
+      "core_governance": {
+
+      },
+
+      "orchestration_governance": {
+
+      },
+
+      "registered_domain_extensions": {
+        "decision_pipeline_domain_extensions": {
+
+        },
+        "conditional_watchdog_domain_extensions": {
+
+        },
+        "ordinary_domain_extensions": {
+          
+        }
+      }
+    },
+    "meta_data": {
+      "usage": "Copy-and-paste MARGD runtime governance bundle template. Use this bundle template as a thin runtime governance component container for arranging core governance components, orchestration governance components, and registered domain extension components without hardcoding component identities, component counts, fixed owner components, fixed routing targets, fixed priority order, or fixed pipeline order.",
+      "syntax_name": "MARGD Runtime Governance Bundle Template",
+      "paired_theory": "MARGPA Multi-Layer Runtime Governance Architecture",
+      "compatibility": [
+        "runtime_governance_bundle_template",
+        "component_payload_or_manifest_based_registration",
+        "core_governance_slot_required",
+        "orchestration_governance_slot_required",
+        "registered_domain_extension_slots_supported",
+        "runtime_orchestration_handoff_required_for_domain_extension_activation"
+      ],
+      "compatibility_policy": {
+        "base_compatibility_labels_are_not_exhaustive": true,
+        "specific_component_identities_are_not_hardcoded_in_compatibility_labels": true,
+        "component_version_binding_is_external_to_this_template": true,
+        "component_identity_binding_owner": "runtime_bundle_instance_or_release_manifest",
+        "component_payload_or_manifest_remains_source_for_capabilities_roles_limits_and_non_targets": true,
+        "additional_component_or_release_compatibility_labels_may_be_added_when_required": true
+      },
+      "status": "experimental",
+      "notes": [
+        "This bundle template is a thin runtime governance component container, not a replacement for core governance, orchestration governance, or registered domain extension components.",
+        "The template keeps core_governance, orchestration_governance, and registered_domain_extensions as component slots without knowing or hardcoding concrete component identities.",
+        "Component slot placement is an initial classification only and must not define activation priority, final decision authority, approval authority, accountability, fixed routing ownership, or fixed component precedence.",
+        "Registered domain extensions are separated into abstract buckets for decision-pipeline-like, conditional-watchdog-like, and ordinary specialist-like components without hardcoding specific governance definition names.",
+        "Loaded components are not active components, registered components are not active components, reference is not governance, and domain extension activation is not full function role scope.",
+        "The bundle template does not perform routing, activation, function role assignment, overlap resolution, attenuation, suppression, handoff decisions, repair propagation, decision audit, audit meta-review, artifact review, subject-matter validation, final approval, or accountability assignment.",
+        "Runtime orchestration reads capabilities, role kinds, scope limits, non-targets, and operational boundaries from each component payload or manifest.",
+        "Metadata follows the common skeleton metadata shape only; release paths, file paths, hashes, publication evidence, and artifact identity evidence are external management concerns."
+      ],
+      "revision_notes": {
+        "previous_version": null,
+        "diff_detail": [
+          "rebuilt_runtime_governance_bundle_template_as_thin_component_container",
+          "kept_core_governance_orchestration_governance_and_registered_domain_extensions_as_primary_component_slots",
+          "removed_fixed_component_identity_assumptions_from_template_structure",
+          "removed_fixed_component_count_and_fixed_component_set_assumptions",
+          "separated_registered_domain_extensions_into_abstract_decision_pipeline_conditional_watchdog_and_ordinary_domain_extension_buckets",
+          "defined_bucket_placement_as_initial_classification_only_not_activation_priority_or_authority_assignment",
+          "defined_default_activation_state_policy_for_core_orchestration_and_registered_domain_extension_slots",
+          "renamed_runtime_resolution_policy_to_runtime_orchestration_handoff_policy_to avoid absorbing orchestration decision responsibility",
+          "normalized_authority_heavy_function_assignment_wording_to_function_role_wording",
+          "removed_external_release_and_artifact_management_metadata_from_meta_data"
+        ]
+      },
+      "version": "0.1.0",
+      "consecutive": "001",
+      "consecutive_policy": {
+        "consecutive_is_not_semantic_version": true,
+        "consecutive_does_not_change_internal_definition_identity": true,
+        "consecutive_identifies_external_candidate_or_build_sequence": true,
+        "consecutive_should_be_a_zero_padded_string": true,
+        "internal_file_name_should_not_be_changed_by_consecutive": true
+      },
+      "created_timestamp": "2026-06-29T14:50:36Z",
+      "last_updated_timestamp": "2026-06-29T14:50:36Z",
+      "language": "en",
+      "format": "json",
+      "author_info": {
+        "author": "Yuki Takagi (nazuna-2371)",
+        "linkedin_url": "https://www.linkedin.com/in/yuki-takagi-34a511389",
+        "github_url": "https://github.com/nazuna-2371",
+        "github_status": "Repository planned or available at https://github.com/nazuna-2371/margpa"
+      },
+      "license_info": {
+        "license": "Creative Commons Attribution-ShareAlike 4.0 International",
+        "spdx_id": "CC-BY-SA-4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "repository_info": {
+        "repository_name": "margpa",
+        "repository_url": "https://github.com/nazuna-2371/margpa",
+        "repository_scope": "Public repository for MARGPA, MARGD, governance components, runtime governance bundle templates, documentation, and related materials."
+      }
+    }
+  }
+}
