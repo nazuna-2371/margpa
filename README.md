@@ -165,6 +165,13 @@ DAGD v0.4.4 は、宣言型AI統治定義です。
 
 policy_goal、constraints、capabilities、evaluation、repair、activation、self_audit、audit_to_action、status_reporting などを含みます。
 
+### MARGD Runtime Governance Bundle Prototype
+
+複数の Governance Definitions を bundle として扱い、  
+CDOGD による routing や domain extensions の構成を試すための試作版を追加しています。
+
+詳細は `margd_bundle_prototype/README.md` を参照してください。
+
 ---
 
 ## 推奨される読み方
@@ -399,6 +406,8 @@ MARGPA stands for Modular AI Runtime Governance Prompting Architecture.
 MARGPA is an experimental framework for combining multiple runtime governance definitions for AI / LLM behavior.
 
 This repository currently publishes MARGD, ARGD, and DAGD.
+
+This repository also includes an experimental MARGD Runtime Governance Bundle Prototype under `margd_bundle_prototype/`.
 
 - MARGD: Modular AI Runtime Governance Definition
 - ARGD: Axiomatic Reasoning Governance Definition
